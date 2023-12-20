@@ -7,7 +7,7 @@ import Update from '../components/update';
 
 
 
-function Dash() {
+function UpdateView() {
     const [employee, setEmployee] = useState([]);
     const removeFromDom = employeeId => {
         setEmployee(employee.filter(employee => employee._id !== employeeId));
@@ -21,4 +21,4 @@ function Dash() {
 
 
 
-export default Dash
+export default UpdateView

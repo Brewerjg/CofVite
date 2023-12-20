@@ -1,5 +1,5 @@
 import React from 'react'
-import DashBoard from '../components/dash';
+import Dash from '../components/dash';
 import { useState } from 'react';
 import Product from '../components/product';
 import Displaypro from '../components/displaypro';
@@ -9,7 +9,7 @@ import Cal from '../components/calendar';
 
 
 
-function Dash() {
+function Dashboard() {
     const [employee, setEmployee] = useState([]);
     const removeFromDom = employeeId => {
         setEmployee(employee.filter(employee => employee._id !== employeeId));
@@ -20,7 +20,7 @@ function Dash() {
     }
   return (
     <div>
-        <DashBoard 
+        <Dash 
         employee={employee} setEmployee={setEmployee} removeFromDom={removeFromDom}/>
         <Product/>
         <Displaypro product={product} setProduct={setProduct} removeDom={removeDom}/>
@@ -32,4 +32,4 @@ function Dash() {
 
 
 
-export default Dash
+export default Dashboard

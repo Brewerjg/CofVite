@@ -5,7 +5,7 @@ import Navbar from '../components/navbar';
 import About from '../components/about';
 
 
-function about() {
+function AboutView() {
   return (
     <div>
       <Navbar/>
@@ -15,4 +15,4 @@ function about() {
   )
 }
 
-export default about
+export default AboutView

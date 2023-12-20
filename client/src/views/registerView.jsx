@@ -3,7 +3,7 @@ import Register from '../components/register';
 
 
 
-function Login() {
+function RegisterView() {
   return (
     <div>
         <Register/>
@@ -15,4 +15,4 @@ function Login() {
 
 
 
-export default Login
+export default RegisterView
