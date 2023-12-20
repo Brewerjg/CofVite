@@ -1,3 +1,4 @@
+import React from 'react';
 import Main from './views/Main';
 import Menu from './views/Menu'; 
 import TruckMap from './views/coffeeTruck';
