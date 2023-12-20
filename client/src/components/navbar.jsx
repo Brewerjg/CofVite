@@ -29,9 +29,6 @@ const  Navbar = () => {
                     <a href="/about">About</a>
                 </li>
                 <li className='font-["Permanent_Marker"] text-2xl mr-3  bg-[#fffdd0] rounded-full hover:rounded-full hover:border-2 hover:border-[#00a6be]'>
-                    <a href="/menu">Menu</a>
-                </li>
-                <li className='font-["Permanent_Marker"] text-2xl mr-3  bg-[#fffdd0] rounded-full hover:rounded-full hover:border-2 hover:border-[#00a6be]'>
                     <a href="/location">Find Us</a>
                 </li>
                 <li className='font-["Permanent_Marker"] text-2xl mr-3  bg-[#fffdd0] rounded-full hover:rounded-full hover:border-2 hover:border-[#00a6be]'>
