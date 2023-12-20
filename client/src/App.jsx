@@ -15,7 +15,7 @@ function App() {
     <>
       <div>
         <BrowserRouter>
-        <Routes location={location} key={location.pathname}>
+        <Routes>
             <Route element={<Main/>} path="/" default/>  
             <Route element={<Menu/>} path="/menu" />
             <Route element={<TruckMap/>} path="/location" />
