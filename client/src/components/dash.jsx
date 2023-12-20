@@ -3,8 +3,7 @@ import React from 'react'
 import axios from 'axios';
 import {useNavigate, Link} from 'react-router-dom'
 import Brick from "../assets/brickWall.jpg"
-import Admin from "../assets/admin.png"
-import Employee from "../assets/employee.png"
+
 
 
 
@@ -51,7 +50,7 @@ const Dash = (props) => {
     <img className="image-bg" src={Brick} alt={Brick} />
       <div className="flex">
         <div className="flex flex-col justify-around w-80 m-4 p-5 border border-black rounded-md bg-slate-400 bg-opacity-70 shadow-xl shadow-black">
-          <img src={Admin} alt="" />
+          
         <Link to={"/"}>
             <button className='m-4 p-1 rounded-2xl text-white bg-gray-800 w-40 text-2xl shadow-xl shadow-gray-700 hover:scale-110 ' >home</button>
           </Link>
@@ -76,7 +75,7 @@ const Dash = (props) => {
                     <div className="border border-black bg-neutral-100 rounded-lg shadow-lg shadow-black container text-center m-3" >
                         <div className="row">
                             <div className="border border-black col">
-                              <img className="m-1" src={Employee} alt="" />
+                              
                                 <h1 className="text-2xl p-4">{employee.name}</h1>
                             </div>
                             <div className="border border-black col ">
