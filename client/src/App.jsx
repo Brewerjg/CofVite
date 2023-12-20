@@ -16,7 +16,7 @@ function App() {
       <div>
         <BrowserRouter>
         <Routes>
-            <Route element={<Main/>} path="/" default/>  
+            <Route element={<Main/>} path="/" />  
             <Route element={<Menu/>} path="/menu" />
             <Route element={<TruckMap/>} path="/location" />
             <Route element={<About/>} path="/about" />
