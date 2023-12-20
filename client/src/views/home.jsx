@@ -3,7 +3,7 @@ import HeadingOne from '../components/headingOne';
 import Navbar from '../components/navbar';
 import Procard from '../components/procard';
 
-function Main() {
+function Home() {
   return (
     <div>
       <Navbar/>
@@ -14,4 +14,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Home;

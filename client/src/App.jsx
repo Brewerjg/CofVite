@@ -1,5 +1,5 @@
 import React from 'react';
-import Main from './views/Main';
+import Home from './views/home';
 import Menu from './views/Menu'; 
 import TruckMap from './views/coffeeTruck';
 import About from './views/About';
@@ -17,7 +17,7 @@ function App() {
       <div>
         <BrowserRouter>
         <Routes>
-            <Route element={<Main/>} path="/" />  
+            <Route element={<Home/>} path="/" />  
             <Route element={<Menu/>} path="/menu" />
             <Route element={<TruckMap/>} path="/location" />
             <Route element={<About/>} path="/about" />
