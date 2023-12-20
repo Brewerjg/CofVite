@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 
 
 
-function Menu() {
+function MenuView() {
   return (
     <div>
       <Navbar/>
@@ -15,4 +15,4 @@ function Menu() {
   )
 }
 
-export default Menu
+export default MenuView

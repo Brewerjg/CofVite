@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './views/home';
-import Menu from './views/Menu'; 
+import MenuView from './views/menuView'; 
 import TruckMap from './views/coffeeTruck';
 import About from './views/About';
 import Login from './views/Login';
@@ -18,7 +18,7 @@ function App() {
         <BrowserRouter>
         <Routes>
             <Route element={<Home/>} path="/" />  
-            <Route element={<Menu/>} path="/menu" />
+            <Route element={<MenuView/>} path="/menu" />
             <Route element={<TruckMap/>} path="/location" />
             <Route element={<About/>} path="/about" />
             <Route element={<Login/>} path="/login" />
