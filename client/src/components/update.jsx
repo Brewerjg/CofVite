@@ -62,7 +62,6 @@ const Update = () => {
     return (
         <div className='m-5'>
             <div>
-
                 <div className='flex justify-center bg-slate-400 rounded-2xl p-4 opacity-90'>
                     <h1 className='text-5xl'>Edit Employee</h1>
                 </div>
