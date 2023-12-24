@@ -16,11 +16,11 @@ const Procard = () => {
     	})
     }, [])
   return (
-    <div name='product' className=" my-8 grid 2xl:grid-cols-3 xl:grid-cols-3 sm:grid-cols-2 md:grid-cols-2 justify-center gap-8 p-6">
+    <div name='product' className=" my-8 grid 2xl:grid-cols-5 xl:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 justify-center gap-8 p-6">
         
         {product.map((product, index)=>{
                 return (
-        <div className='bg-slate-300 rounded-3xl p-2' key={index}>
+        <div className='bg-transparent rounded-3xl' key={index}>
             <img src={product.image} alt=" random imgee" className="w-full object-cover object-center rounded-3xl bg-slate-600 shadow-md"/>  
             
             <div className="relative px-4 -mt-16  ">

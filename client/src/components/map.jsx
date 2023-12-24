@@ -22,10 +22,10 @@ const MapOne = () => {
                 referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
-            <div className='bg-white rounded-lg mt-4 shadow-md shadow-[#00a6be] p-3 w-80'>
+            <div className='bg-white rounded-lg mt-4 shadow-md shadow-[#00a6be] p-3 w-90'>
                 <p className='text-2xl text-bold text-bold underline decoration-[#00a6be] '>The "Jacked Up" coffee truck events!</p>
             </div>
-            <div className='bg-white rounded-lg shadow-md shadow-[#00a6be] mt-10  p-3 w-80 animate-bounce'>
+            <div className='bg-white rounded-lg shadow-md shadow-[#00a6be] mt-10  p-3 w-80'>
                 <p className='text-2xl text-bold text-bold '>Arkansas Children's Hospital<br/>
                 Saturday the 29th<br/>9 AM to 3 PM</p>
             </div>

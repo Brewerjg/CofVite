@@ -13,7 +13,7 @@ function UpdateView() {
         setEmployee(employee.filter(employee => employee._id !== employeeId));
     }
   return (
-    <div>
+    <div className='bg-[#2d2b3b] h-screen'>
         <Update employee={employee} setEmployee={setEmployee} removeFromDom={removeFromDom}/>
     </div>
   )

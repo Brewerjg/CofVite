@@ -27,7 +27,7 @@ const Heading_one=()=> {
         {/* Container */}
         <div name='home'  className=' mx-auto  flex flex-col items-center w-full h-full '>
             <div className='home text-white '>
-                <p className='my-text text-8xl font-["Bungee_Shade"] py-4'> Tupelo Coffee</p>
+                <p className='my-text text-5xl sm:text-8xl font-["Bungee_Shade"] py-4'> Tupelo Coffee</p>
                 <p className='my-text hidden lg:block text-2xl p-4'>We are providers of the best coffee products in the south.</p>
             </div>
 

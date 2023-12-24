@@ -6,6 +6,7 @@ const ProductSchema = new mongoose.Schema({
     image: { type: String,},
     title: { type: String},
     productBody: { type: String,
+    category: { type: String},
 
 },
 }, { timestamps: true });
