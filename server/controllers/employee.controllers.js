@@ -1,7 +1,5 @@
 const employee = require('../models/employee.models');
-const jwt = require("jsonwebtoken");
-const secret = process.env.FIRST_SECRET_KEY;
-const bcrypt = require('bcrypt');
+
 
 module.exports ={
     // create

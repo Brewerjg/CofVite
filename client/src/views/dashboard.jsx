@@ -19,7 +19,7 @@ function Dashboard() {
         setProduct(product.filter(product => product._id !== productId));
     }
   return (
-    <div>
+    <div className='bg-[#2d2b3b]'>
         <Dash 
         employee={employee} setEmployee={setEmployee} removeFromDom={removeFromDom}/>
         <Product/>

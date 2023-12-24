@@ -17,11 +17,6 @@ const EmployeeSchema = new mongoose.Schema({
             message: "Please enter a valid email"
         }
     },
-    password: {
-        type: String,
-        required: [true, "Password is required"],
-        minlength: [8, "Password must be 8 characters or longer"]
-    },
     avail: {
         type: String,
         minlength: [2, 'Must be longer than 2 characters']
@@ -32,27 +27,6 @@ const EmployeeSchema = new mongoose.Schema({
     }
 }, { timestamps: true });
 
-// Additional model definitions and usage
-
-
-EmployeeSchema.virtual('confirmPassword')
-.get( () => this.confirmPassword )
-.set( value => this.confirmPassword = value );
-
-EmployeeSchema.pre('validate', function(next) {
-    if (this.password !== this.confirmPassword) {
-      this.invalidate('confirmPassword', 'Password must match confirm password');
-    }
-    next();
-  });
-  
-  EmployeeSchema.pre('save', function(next) {
-    bcrypt.hash(this.password, 10)
-      .then(hash => {
-        this.password = hash;
-        next();
-      });
-  });
 
 
 
