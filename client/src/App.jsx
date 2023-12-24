@@ -12,7 +12,7 @@ function App() {
       <div>
         <BrowserRouter>
           <Routes>
-            <Route element={<Home />} path="/" />
+            <Route element={<Home />} path="/" default/>
             <Route element={<Dashboard />} path="/dashboard" />
             <Route element={<UpdateView />} path="/employee/:id" />
           </Routes>
