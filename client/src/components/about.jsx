@@ -6,7 +6,7 @@ import coffeeDining from '../assets/coffeeDining.jpg';
 
 const About = () => {
   return (
-    <div>
+    <div name='about'>
       <img className='image-bg' src={coffeeDining} alt="" />
     {/* full screen story */}
         <div className='h-[100vh] flex flex-col justify-center items-center my-10 py-4'>

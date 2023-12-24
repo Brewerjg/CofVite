@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { useNavigate, useParams, Link } from "react-router-dom";
-import Brick from "../assets/brickWall.jpg"
+
 
 
 
@@ -62,7 +62,7 @@ const Update = () => {
     return (
         <div className='m-5'>
             <div>
-            <img className="image-bg" src={Brick} alt={Brick} />
+
                 <div className='flex justify-center bg-slate-400 rounded-2xl p-4 opacity-90'>
                     <h1 className='text-5xl'>Edit Employee</h1>
                 </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import Dash from '../components/dash';
 import { useState } from 'react';
-import Product from '../components/product';
+import Product from '../components/productUpload';
 import Displaypro from '../components/displaypro';
 import Cal from '../components/calendar';
 

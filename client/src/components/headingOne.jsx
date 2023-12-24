@@ -1,7 +1,6 @@
 import React, { useLayoutEffect, useRef } from 'react'
 import {gsap} from 'gsap'
 import SplitType from 'split-type'
-import VideoRoast from '../assets/video/coffeeRoast.mp4'
 import CoffeeMan from '../assets/manCoffee.jpg'
 import coffeeMenu from '../assets/coffee_menu.jpg'
 import coffeeGo from '../assets/coffeeGo.jpg'
@@ -24,11 +23,9 @@ const Heading_one=()=> {
 
   return (
     <div  className=' w-full h-full'>
-        
-        <video className='video-bg' src={VideoRoast} autoPlay loop muted></video>
 
         {/* Container */}
-        <div  className=' mx-auto  flex flex-col items-center w-full h-full '>
+        <div name='home'  className=' mx-auto  flex flex-col items-center w-full h-full '>
             <div className='home text-white '>
                 <p className='my-text text-8xl font-["Bungee_Shade"] py-4'> Tupelo Coffee</p>
                 <p className='my-text hidden lg:block text-2xl p-4'>We are providers of the best coffee products in the south.</p>
@@ -48,9 +45,7 @@ const Heading_one=()=> {
                 </div>
 {/* menu card */}
                 <div className="bg-white hover:scale-110 duration-150 max-w-md rounded overflow-hidden shadow-2xl">
-                    <div className="px-6 py-4">
-                        <div className="text-center font-bold text-xl mb-2">Checkout our Menu</div>
-                    </div>
+                    
                     <a href="/menu">
                         <img className="w-full" src={coffeeMenu} alt="coffee"/>
                     </a>

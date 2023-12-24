@@ -16,7 +16,7 @@ const Procard = () => {
     	})
     }, [])
   return (
-    <div className=" my-8 grid 2xl:grid-cols-3 xl:grid-cols-3 sm:grid-cols-2 md:grid-cols-2 justify-center gap-8 p-6">
+    <div name='product' className=" my-8 grid 2xl:grid-cols-3 xl:grid-cols-3 sm:grid-cols-2 md:grid-cols-2 justify-center gap-8 p-6">
         
         {product.map((product, index)=>{
                 return (

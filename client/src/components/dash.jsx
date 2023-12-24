@@ -2,7 +2,7 @@ import { useEffect } from "react"
 import React from 'react'
 import axios from 'axios';
 import {useNavigate, Link} from 'react-router-dom'
-import Brick from "../assets/brickWall.jpg"
+
 
 
 
@@ -47,7 +47,7 @@ const Dash = (props) => {
     return (
         
   <div className=' h-[100%]'>
-    <img className="image-bg" src={Brick} alt={Brick} />
+    
       <div className="flex">
         <div className="flex flex-col justify-around w-80 m-4 p-5 border border-black rounded-md bg-slate-400 bg-opacity-70 shadow-xl shadow-black">
           

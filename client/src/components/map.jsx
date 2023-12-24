@@ -4,7 +4,7 @@ import coffeeDining from '../assets/coffeeDining.jpg';
 
 const MapOne = () => {
   return (
-    <div>
+    <div name='map'>
         <img className='image-bg' src={coffeeDining} alt="" />
         <div className='h-[100vh] flex flex-col justify-center items-center mt-10 py-4'>
             <div className='bg-white mt-10 rounded-lg shadow-md shadow-[#cde2e9] p-3 w-80'>

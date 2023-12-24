@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {FaBars, FaTimes, FaFacebook, FaInstagram, } from 'react-icons/fa'
 import {BsPinMap} from 'react-icons/bs'
 import TupeloCreme from '../assets/Tupelocreme.png'
+import { Link } from 'react-scroll'
 
 
 const  Navbar = () => {
@@ -23,13 +24,16 @@ const  Navbar = () => {
         </div>
             <ul className='mt-8 hidden md:flex '>
                 <li className='font-["Permanent_Marker"] text-2xl bg-[#fffdd0] rounded-full mr-3 hover:rounded-full hover:border-2 hover:border-[#00a6be]'>
-                    <a href="/">Home</a>
+                    <Link to='home' smooth={true} duration={500}>Home</Link>
                 </li>
                 <li className='font-["Permanent_Marker"] text-2xl mr-3  bg-[#fffdd0] rounded-full hover:rounded-full hover:border-2 hover:border-[#00a6be]'>
-                    <a href="/about">About</a>
+                    <Link to='about' smooth={true} duration={500}>About</Link>
                 </li>
                 <li className='font-["Permanent_Marker"] text-2xl mr-3  bg-[#fffdd0] rounded-full hover:rounded-full hover:border-2 hover:border-[#00a6be]'>
-                    <a href="/location">Find Us</a>
+                    <Link to='product' smooth={true} duration={500}>Products</Link>
+                </li>
+                <li className='font-["Permanent_Marker"] text-2xl mr-3  bg-[#fffdd0] rounded-full hover:rounded-full hover:border-2 hover:border-[#00a6be]'>
+                    <Link to='map' smooth={true} duration={500}>Find Us</Link>
                 </li>
                 <li className='font-["Permanent_Marker"] text-2xl mr-3  bg-[#fffdd0] rounded-full hover:rounded-full hover:border-2 hover:border-[#00a6be]'>
                     <a href="/dashboard">Dashboard</a>
@@ -44,16 +48,16 @@ const  Navbar = () => {
         {/* mobile menu */}
         <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen text-black  flex flex-col justify-center items-center'}>
             <li className='py-5 text-4xl shadow-2xl shadow-black mt-3 font-["Permanent_Marker"] mr-1  bg-[#fffdd0] rounded-full hover:rounded-full hover:border-2 hover:border-[#00a6be]'>
-                <a href="/">Home</a>
+                <Link to='home' smooth={true} duration={500}>Home</Link>
             </li>
             <li className='py-5 text-4xl shadow-2xl shadow-black mt-3 font-["Permanent_Marker"] mr-1  bg-[#fffdd0] rounded-full hover:rounded-full hover:border-2 hover:border-[#00a6be]'>
-                <a href="/about">About</a>
+                <Link to='about' smooth={true} duration={500}>About</Link>
             </li>
             <li className='py-5 text-4xl shadow-2xl shadow-black mt-3 font-["Permanent_Marker"] mr-1  bg-[#fffdd0] rounded-full hover:rounded-full hover:border-2 hover:border-[#00a6be]'>
-                <a href="/menu">Menu</a>
+                <Link to='product' smooth={true} duration={500}>Products</Link>
             </li>
             <li className='py-5 mt-3 text-4xl shadow-2xl shadow-black font-["Permanent_Marker"] mr-1  bg-[#fffdd0] rounded-full hover:rounded-full hover:border-2 hover:border-[#00a6be]'> 
-                <a href="/location">Find Us</a>
+                <Link to='map' smooth={true} duration={500}>Find Us</Link>
             </li>
             <li className='py-5 mt-3 text-4xl shadow-2xl shadow-black font-["Permanent_Marker"] mr-1  bg-[#fffdd0] rounded-full hover:rounded-full hover:border-2 hover:border-[#00a6be]'> 
                 <a href="/dashboard">Dashboard</a>
