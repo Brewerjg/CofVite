@@ -7,6 +7,7 @@ import coffeeGo from '../assets/coffeeGo.jpg'
 import NeonCoffee from '../assets/neonCoffee.jpg'
 import womenCoffee from '../assets/womanCoffee.jpg'
 import veteran from '../assets/veterans.jpg'
+import {Link} from 'react-scroll'
 
 
 
@@ -45,10 +46,9 @@ const Heading_one=()=> {
                 </div>
 {/* menu card */}
                 <div className="bg-white hover:scale-110 duration-150 max-w-md rounded overflow-hidden shadow-2xl">
-                    
-                    <a href="/menu">
+
                         <img className="w-full" src={coffeeMenu} alt="coffee"/>
-                    </a>
+                    
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl mb-2">The Goods</div>
                         <p className="text-gray-700 text-base">
@@ -70,9 +70,9 @@ const Heading_one=()=> {
                 </div>
 {/* on the go */}
                 <div className="bg-white hover:scale-110 duration-150 max-w-md rounded overflow-hidden shadow-2xl">
-                    <a href="/onTheGo">
+                    <Link to='map' smooth={true} duration={500}>
                         <img className="w-full" src={coffeeGo} alt="coffee"/>
-                    </a>
+                    </Link>
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl mb-2">Find Coffee on the go!</div>
                         <p className="text-gray-700 text-base">
@@ -97,21 +97,21 @@ const Heading_one=()=> {
                 <img src={NeonCoffee} alt="" />
 
                 <div name='contact' className='hidden lg:block absolute top-1/2 left-1/2 text-center -translate-x-64 -translate-y-48   bg-transparent  '>
-                <form className='bg-amber-50 p-4 rounded-lg flex flex-col max-w-[600px] w-full' method='post' action="https://getform.io/f/d73ca015-f039-4e23-af71-539db807fc37">
-                    <div className=' pb-8'>
-                        <p className='text-4xl font-bold font-["Permanent_Marker"] inline border-b-4 border-pink-600 text-pink-600'>
+                    <form className='bg-amber-50 p-4 rounded-lg flex flex-col max-w-[600px] w-full' method='post' action="https://getform.io/f/d73ca015-f039-4e23-af71-539db807fc37">
+                        <div className=' pb-8'>
+                            <p className='text-4xl font-bold font-["Permanent_Marker"] inline border-b-4 border-pink-600 text-pink-600'>
                             Subscribe
-                        </p>
-                        <p className='text-pink-600 py-4'>Join our pilgrimage— seeking quality, truth and accountability<br/>
-                        in coffee. Sign-up on our email list below to join<br/> 
-                        the Tupelo Coffee Society. This will give you “early access” to <br/>
-                        special offerings, discount codes, brew videos and secrets…shhhh!…</p>
-                    </div>
-                    <input className='bg-[#ccd6f6] rounded-md p-2' type="text" placeholder='Name' name='name' />
-                    <input className='rounded-md my-4 p-2 bg-[#ccd6f6]' type="email" placeholder='Email' name='email' />
-                    <button className='rounded-lg text-[#00a6be] border-2 border-pink-600 hover:bg-pink-600 hover:border-pink-600 mt-4 px-4 py-3 mx-auto flex items-center font-["Permanent_Marker"]'>Subscribe Now!</button>
-                </form>
-            </div>
+                            </p>
+                            <p className='text-pink-600 py-4'>Join our pilgrimage  seeking quality, truth and accountability<br/>
+                            in coffee. Sign-up on our email list below to join<br/> 
+                            the Tupelo Coffee Society. This will give you “early access” to <br/>
+                            special offerings, discount codes, brew videos and secrets…shhhh!…</p>
+                        </div>
+                            <input className='bg-[#ccd6f6] rounded-md p-2' type="text" placeholder='Name' name='name' />
+                            <input className='rounded-md my-4 p-2 bg-[#ccd6f6]' type="email" placeholder='Email' name='email' />
+                            <button className='rounded-lg text-[#00a6be] border-2 border-pink-600 hover:bg-pink-600 hover:border-pink-600 mt-4 px-4 py-3 mx-auto flex items-center font-["Permanent_Marker"]'>Subscribe Now!</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
